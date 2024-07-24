@@ -1,12 +1,3 @@
-trigger:
-- main
-
-pool:
-  vminage: ubuntu-latest
-
-variables: :
-  buildConfiguration: 'Release'
-
+pool: MyAgentPool
 steps:
-- script: dotnet build --configuration $(buildConfiguration)
-  displayName: 'dotnet (buildConfiguration)'
+- bash: echo hello world
